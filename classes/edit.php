@@ -10,4 +10,11 @@
 
     }
 
+    if(isset($_POST['update__task'])){
+        $u1->update_task($_POST,$id);
+  
+  
+      }
+
+
 ?>
