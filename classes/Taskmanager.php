@@ -32,4 +32,20 @@
         return $result =  $this->con->query("SELECT * FROM `tasks` WHERE id ='$tid'");
 
       }
+      // update task
+      public function update_task($allTask,$tid){
+        $taskname = $allTask['taskName'];
+        $taskdate = $allTask['taskdate'];
+
+        $sql = "UPDATE `tasks` SET `task_name`='$taskname',`task_date`='$taskdate' WHERE id='$tid' ";
+
+        $result = $this->con->query($sql);
+
+
+
+
+    }
+
+
+
 ?>
