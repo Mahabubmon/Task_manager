@@ -1,3 +1,11 @@
+<?php
+  include("classes/TaskManager.php");
+  $u1 = new TaskManager();
+
+  if(isset($_POST['add__task'])){
+    $u1->add_task($_POST);
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
