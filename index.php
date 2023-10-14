@@ -32,7 +32,20 @@
                   <th>Date</th>
                   <th>Action</th>
                 </tr>
-               
+                <?php 
+                 $data = $u1->allTask();
+                 $i=0;
+                  while($row = mysqli_fetch_assoc($data)){?>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <a href="edit.php?id=<?php echo $row['id'];?>" class="btn btn-warning btn-sm">Edit</a>
+                  </td>
+                </tr>
+                <?php 
+                  }
                 
               </table>
             </div>
