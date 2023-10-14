@@ -37,15 +37,16 @@
                  $i=0;
                   while($row = mysqli_fetch_assoc($data)){?>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td><?php echo ++$i?></td>
+                  <td><?php echo $row['task_name']?></td>
+                  <td><?php echo date("d-m-y",strtotime($row['task_date']));?></td>
                   <td>
                     <a href="edit.php?id=<?php echo $row['id'];?>" class="btn btn-warning btn-sm">Edit</a>
                   </td>
                 </tr>
                 <?php 
                   }
+                ?>
                 
               </table>
             </div>
