@@ -41,7 +41,9 @@
 
         $result = $this->con->query($sql);
 
-
+        if($result){
+            header("Location:index.php");
+        }
 
 
     }
