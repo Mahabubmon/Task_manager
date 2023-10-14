@@ -27,5 +27,9 @@
         return $result = $this->con->query("SELECT * FROM `tasks`");
       }
 
+      // edit task
+      public function edit_task($tid){
+        return $result =  $this->con->query("SELECT * FROM `tasks` WHERE id ='$tid'");
 
+      }
 ?>
