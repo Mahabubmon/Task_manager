@@ -34,7 +34,48 @@
     />
   </head>
   <body>
-   
+  <div class="taskManager">
+      <div class="container">
+        <div class="row vh-100 align-items-center">
+          <div class="col-lg-8 offset-lg-2 shadow p-5">             
+            <div class="addTask">
+              <form action="" method="POST">
+                <h2 class="display-5 text-info">Update Task</h2>
+                <div class="form-group mb-3">
+                  <label for="addtask">Add Task</label>
+                  <input
+                    type="text"
+                    name="taskName"
+                    id="taskName"
+                    placeholder="Enter Task Details"
+                    class="form-control"
+                    value="<?php echo $row['task_name']; ?>"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="taskdate">Task Date</label>
+                  <input
+                    type="date"
+                    name="taskdate"
+                    id="taskdate"
+                    class="form-control"
+                    value="<?php echo $row['task_date']; ?>"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <input
+                    type="submit"
+                    name="update__task"
+                    class="btn btn-info"
+                    value="Update Task"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
