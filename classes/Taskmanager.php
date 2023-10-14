@@ -22,5 +22,10 @@
         
        
     }
+       // All Task
+       public function allTask(){
+        return $result = $this->con->query("SELECT * FROM `tasks`");
+      }
+
 
 ?>
